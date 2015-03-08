@@ -1,38 +1,31 @@
 package dcll.mbou.mysimplestack;
 
-import junit.framework.Test;
 import junit.framework.TestCase;
-import junit.framework.TestSuite;
+import org.junit.Before;
+import org.junit.Test;
 
 /**
  * Unit test for simple App.
  */
-public class AppTest 
-    extends TestCase
-{
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-    public AppTest( String testName )
-    {
-        super( testName );
+public class AppTest extends TestCase {
+    AppTest appTest;
+
+    @Before
+    public void setUp() throws Exception {
+        appTest = new AppTest();
+
+        System.out.println("Execute before each test main.");
     }
 
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
-    {
-        return new TestSuite( AppTest.class );
+    @Test
+    public void testMain() throws Exception {
+        App.main(new String[]{});
     }
 
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp()
-    {
-        assertTrue( true );
+
+    @org.junit.Test
+    public void testConstructorDefault(){
+        App app = App.getObject();
     }
+
 }

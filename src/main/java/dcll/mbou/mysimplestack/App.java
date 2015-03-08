@@ -1,13 +1,31 @@
+/**
+ *
+ */
 package dcll.mbou.mysimplestack;
 
 /**
- * Hello world!
- *
+ * App class.
  */
-public class App 
-{
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
+public final class App {
+
+    /**
+     * Default constructor.
+     */
+    private App() {
     }
+
+    /**
+     * @param args Entree du programme.
+     */
+    public static void main(final String[] args) {
+    }
+
+    /**
+     *
+     * @return App new instance of App
+     */
+    public static App getObject() {
+        return new App();
+    }
+
 }
