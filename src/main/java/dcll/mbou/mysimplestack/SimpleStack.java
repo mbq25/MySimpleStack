@@ -33,6 +33,7 @@ public class SimpleStack implements IStack {
 
     /**
      * To push an item to stack.
+     * Comentaire répondant à l'exigence #1
      * @param item an item.
      */
     @Override
